@@ -4,8 +4,9 @@
 ## Prerequisites
 To get or refresh the SHACL shapes, run:
 ```bash
-./get-tree-shapes.sh
-./get-ldes-shapes.sh
+chmod +x ./build/*.sh
+./build/get-tree-shapes.sh
+./build/get-ldes-shapes.sh
 ```
 
 ## Build
