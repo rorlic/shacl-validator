@@ -10,3 +10,9 @@ services:
     - validator.restrictResourcesToDomain=false
     volumes:
     - ./resources:/validator/resources/
+    healthcheck:
+      start_period: 5s
+      test: wget -qO- http://shacl-validator:8080/shacl/ldes/upload
+      interval: 3s
+      timeout: 1s
+      retries: 10

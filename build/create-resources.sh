@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # copy tree resources
-rm -d ./resources/tree/config.properties
+rm -fd ./resources/tree/config.properties
 cp ./sources/tree/config.properties ./resources/tree/
 
 # copy ldes resources
-rm -d ./resources/ldes/config.properties
+rm -fd ./resources/ldes/config.properties
 cp ./sources/ldes/config.properties ./resources/ldes/
 
 # minify banner and append to config
