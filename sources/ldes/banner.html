@@ -1,0 +1,108 @@
+<style>
+  :root {
+    --base-size-16: 1rem;
+    --base-size-8: 0.5rem;
+    --borderColor-success-emphasis: #238636;
+    --borderColor-default: #3d444d;
+    --fgColor-success: #3fb950;
+    --base-text-weight-medium: 500;
+    --bgColor-neutral-muted: #656c7633
+  }
+
+  .markdown-alert.markdown-alert-tip {
+    border-left-color: var(--borderColor-success-emphasis)
+  }
+
+  .markdown-alert {
+    padding: var(--base-size-8) var(--base-size-16);
+    margin-bottom: var(--base-size-16);
+    color: inherit;
+    border-left: .25em solid var(--borderColor-default)
+  }
+
+  .markdown-alert.markdown-alert-tip .markdown-alert-title {
+    color: var(--fgColor-success)
+  }
+
+  .markdown-alert .markdown-alert-title {
+    display: flex;
+    font-weight: var(--base-text-weight-medium, 500);
+    align-items: center;
+    line-height: 1
+  }
+
+  .markdown-alert>:first-child {
+    margin-top: 0
+  }
+
+  .octicon {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor
+  }
+
+  .markdown-body code,
+  .markdown-body tt {
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: var(--bgColor-neutral-muted);
+    border-radius: 6px
+  }
+
+  .footnotes {
+    font-size: 75%
+  }
+</style>
+<div>
+  <div class="markdown-body">
+    <div style="display:table">
+      <div style="display:table-row">
+        <div style="display:table-cell;cursor:pointer" class="validatorReload">
+          <h1>LDES Content Validator</h1>
+        </div>
+      </div>
+      <div style="display:table-row">
+        <div style="display:table-cell;padding-top:20px">
+          <p>This service allows you to validate LDES content against its <a href="https://www.w3.org/TR/shacl/">SHACL
+              shapes</a>.<br><br>It is also offered via <a href="/shacl/soap/ldes/validation?wsdl">SOAP API</a>, <a
+              href="/shacl/swagger-ui/index.html">REST API</a>
+            and <a href="/shacl-offline/ldes/validator.zip">command-line tool</a> <sup>[<a
+                href="#footnote-1">1</a>]</sup>,
+            with further information available <a
+              href="https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/">here</a>.<br>Questions and feedback
+            can be sent to <a href="mailto:TODO@TBD">TODO@TBD</a>.</p>
+        </div>
+      </div>
+      <div style="display:table-row">
+        <div style="display:table-cell;padding-top:20px">
+          <div class="markdown-alert markdown-alert-tip" dir="auto">
+            <p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16"
+                version="1.1" width="16" height="16" aria-hidden="true">
+                <path
+                  d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z">
+                </path>
+              </svg>Tip</p>
+            <p dir="auto">To validate your LDES content:</p>
+            <ol>
+              <li>select the file, enter a URL or paste the content</li>
+              <li>choose the validation type: root node or subsequent node</li>
+              <li>choose the content syntax (RDF serialization type)</li>
+              <li>click <code>Validate</code></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:table-row">
+      <div style="display:table-cell;padding-top:20px" class="footnotes">
+        <p id="footnote-1"><sup>[1]</sup>Only available if hosted on the<a
+            href="https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/#offline-validator-for-command-line-use">ITB</a>.
+        </p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>

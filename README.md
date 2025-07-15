@@ -12,7 +12,7 @@ chmod +x ./build/*.sh
 ## Build
 To build the solution, run:
 ```bash
-docker compose pull
+./build/create-resources.sh
 ```
 
 ## Run
