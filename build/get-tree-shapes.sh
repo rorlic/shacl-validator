@@ -1,5 +1,5 @@
 #!/bin/bash
-export TAG=v0.4.1-alpha
+export TAG=v0.5.0-alpha
 export FILE=tree-shapes.zip
 export RESOURCES=./resources/tree/shapes
 
