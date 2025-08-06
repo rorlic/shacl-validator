@@ -1,7 +1,7 @@
-# SHACL Validator for LDES
-This repository contains a [SHACL](https://www.w3.org/TR/shacl/) validator for verifying LDES content based on the ITB test suite's [RDF validation](https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/) and the [LDES SHACL](https://github.com/rorlic/ldes-shacl) (and [TREE SHACL](https://github.com/rorlic/tree-shacl)) shapes.
+# SHACL Validator for LDES & TREE
+This repository contains a [SHACL](https://www.w3.org/TR/shacl/) validator for verifying LDES (and TREE) content based on the ITB test suite's [RDF validation](https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/) and the [LDES SHACL](https://github.com/rorlic/ldes-shacl) (and [TREE SHACL](https://github.com/rorlic/tree-shacl)) shapes.
 
-It can be used for verifying the response of a collection, root or subsequent TREE or LDES node request, both online and offline. You can either provide a URL, upload a file or simply copy/paste some content. Various RDF serializations as supported.
+It can be used for verifying the response of a collection, root or subsequent LDES (or TREE) node request, both online and offline. You can either provide a URL, upload a file or simply copy/paste some content. Various RDF serializations as supported.
 
 ## Build
 To build the solution, run the following (bash) shell scripts:
@@ -21,7 +21,7 @@ docker compose up -d --wait
 When the command ends, the validator is available for use running in a docker container.
 
 ## Test
-To use the validator, go to the [TREE validator](http://localhost:8088/shacl/tree/upload) or [LDES validator](http://localhost:8088/shacl/ldes/upload) and follow the instructions.
+To use the validator, go to the [LDES validator](http://localhost:8088/shacl/ldes/upload) (or [TREE validator](http://localhost:8088/shacl/tree/upload)) and follow the instructions.
 
 ## Cleanup
 To stop the solution, run:
